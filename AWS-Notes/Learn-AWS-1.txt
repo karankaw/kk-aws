@@ -1,0 +1,25 @@
+[default]
+aws_access_key_id=
+aws_secret_access_key=
+
+
+https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/
+EC2 instance with a public IP address and a route table entry with the default route pointing to an Internet Gateway.
+Private EC2 instance with a default route through a NAT gateway.
+Private EC2 instance with connectivity to Amazon S3 using a Gateway VPC endpoint.
+
+aws s3 ls
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html     [IMP IMP IMP]
+
+https://s3browser.com/aws-access-key-id-and-secret-access-key.aspx
+  
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+aws ec2 describe-instances --profile user1
+aws ec2 describe-instances --filters "Name=instance-type,Values=t2.micro" --query "Reservations[].Instances[].InstanceId"
+An error occurred (UnauthorizedOperation)
