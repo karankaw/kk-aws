@@ -1,0 +1,18 @@
+grep -r --exclude="*.cmd"  "ckin" ./
+
+ls . | grep -Ev '.bash_history|.viminfo'
+
+git push origin <tag_name>
+And the following command should push all tags (not recommended):
+git push --tags
+
+ls . | grep -Ev '.bash_history|.viminfo' | wc --lines
+
+git filter-branch
+
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History%
+https://rtyley.github.io/bfg-repo-cleaner/
+
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history/59292399#59292399
+git filter-branch --force --index-filter   "git rm --cached --ignore-unmatch Keys.txt"   --prune-empty --tag-name-filter cat -- --all
