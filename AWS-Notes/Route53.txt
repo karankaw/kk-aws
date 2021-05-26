@@ -1,0 +1,6 @@
+Why is Route 53 So called ?
+
+TCP/UDP protoco have a default port 53 for DNS Queries
+
+-------------------------------------------------------
+Register a Domain Name

@@ -1,0 +1,24 @@
+7. Application Layer
+6. Presentation Layer
+5. Session Layer
+4. Transport Layer - TCP/UDP
+3. Network Layer   - Routing Packets based on IP Address
+2. Data Link Layer
+1. Physical Layer
+
+OSI Reference Model 	 	
+------------------------
+Application Load Balancer - Based on HTTP Header
+Allows You to route requests on the basis of HTTP Request 
+
+N/W Load Balancer - Very Expensive/High Performance - Operates at Transport Layer (Layer 4)
+
+Classic Load Balancer - Supports Layer7(HTTP(s)/Layer 4 (Legacy)
+
+Round-Robin
+Least Loaded Server
+
+"X-Forwarded-For" Header  - Tells us about Originating IP
+
+Common LB Error - HTTP 504 
+LB Could not connect to Target Server/Database 
